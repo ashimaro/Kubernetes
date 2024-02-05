@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: springbootmicroservicescontainerization
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: springbootmicroservicescontainerization
+  template:
+    metadata:
+      labels:
+        app: springbootmicroservicescontainerization
+    spec:
+      containers:
+      - name: springbootmicroservicescontainerization
+        image: annamalaiashwini99/springbootmicroservicescontainerization:latest
+        ports:
+        - containerPort: 8080
+        command: ["java", "-jar", "SpringBootMicroservicesContainerization-0.0.1-SNAPSHOT.jar"]
