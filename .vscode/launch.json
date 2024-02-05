@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringBootMicroservicesContainerizationApplication<SpringBootMicroservicesContainerization>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.assessment.SpringBootMicroservicesContainerization.SpringBootMicroservicesContainerizationApplication",
+            "projectName": "SpringBootMicroservicesContainerization",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
